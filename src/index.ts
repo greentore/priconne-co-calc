@@ -55,6 +55,7 @@ ${formatMillions(leftover)} overkilled ${overkillRatio} times`;
 }
 
 function resetCalc() {
+  title = "";
   dom.form.reset();
   dom.resultElem.innerText = "";
 }

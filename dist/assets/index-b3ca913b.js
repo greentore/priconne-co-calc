@@ -107,6 +107,7 @@ ${formatMillions(leftover)} overkilled ${overkillRatio} times`;
   setQuery();
 }
 function resetCalc() {
+  title = "";
   dom.form.reset();
   dom.resultElem.innerText = "";
 }
