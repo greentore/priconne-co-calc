@@ -27,7 +27,7 @@ function setQuery() {
   const paramString = params.toString();
   if (paramString && "?" + paramString !== location.search) {
     console.debug("history push");
-    history.pushState(null, "", `${location.pathname}?${params.toString()}`);
+    history.pushState(null, "", `${location.pathname}?${paramString}`);
   } else if (!paramString && location.search) {
     console.debug("resetting history");
     history.pushState(null, "", "/");
@@ -54,7 +54,13 @@ ${formatMillions(leftover)} overkilled ${overkillRatio} times`;
   setQuery();
 }
 
+function resetCalc() {
+  dom.form.reset();
+  dom.resultElem.innerText = "";
+}
+
 function restoreState() {
+  resetCalc();
   const params = new URLSearchParams(location.search);
   if (!params.size) return;
   console.debug("restoring state");
