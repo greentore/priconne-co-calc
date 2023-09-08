@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carryover Calculator</title>
+    <meta property="og:title" content="Carryover Calculator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./comic_l_121401_01.jpg" />
+    <meta
+      property="og:description"
+      content="A carryover time calculation tool."
+    />
+    <link rel="icon" href="./assets/favicon-32x32-51cc8f47.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="./assets/favicon-c7fa930f.png" type="image/png" sizes="128x128" />
+    
+    
+    <script type="module" crossorigin src="./assets/index-972128bb.js"></script>
+    <link rel="stylesheet" href="./assets/index-c15a241c.css">
+  </head>
+  <body>
+    <form name="co-calculator" id="co-calculator__form">
+      <div id="co-calculator" class="fancy-container">
+        <div class="row">
+          <div>Name:</div>
+          <input type="text" name="name" id="co-calculator__name" placeholder="To differentiate multiple tabs" />
+        </div>
+        <div class="row">
+          <div>Boss HP:</div>
+          <input type="text" name="hp" id="co-calculator__hp" placeholder="Use `m` suffix for millions" />
+        </div>
+        <div class="row">
+          <div>Leading hits:</div>
+          <input
+            type="text"
+            name="leading-hits"
+            id="co-calculator__leading-hits"
+            placeholder="Separate multiple values with spaces"
+          />
+        </div>
+        <div class="row">
+          <div>Last Hit:</div>
+          <input
+            type="text"
+            name="last-hit"
+            id="co-calculator__last-hit"
+          />
+        </div>
+        <input
+          type="submit"
+          value="Calculate"
+          id="co-calculator__calculate"
+          class="calculate-button"
+        />
+        <div id="co-calculator__result"></div>
+      </div>
+    </form>
+    <footer>v1.0.0</footer>
+  </body>
+</html>

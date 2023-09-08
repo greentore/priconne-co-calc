@@ -1,0 +1,68 @@
+:root {
+  --pink: #e91e63;
+  --light-pink: #ff4081;
+  color-scheme: light only;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto"), url("./Roboto-Regular-webfont-717d2546.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./121400402-6b4cce29.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  font-family: "Roboto";
+}
+
+.fancy-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: var(--pink);
+  row-gap: 8px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.fancy-container .row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.calculate-button {
+  align-self: center;
+}
+
+#co-calculator {
+  max-width: 400px;
+}
+
+#co-calculator__result {
+  min-height: 50px;
+  background-color: var(--light-pink);
+  text-align: center;
+  padding: 5px;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  bottom: 2px;
+  right: 5px;
+}
+
+

@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "dev": "deno run -A npm:vite",
+    "build": "deno run -A npm:vite build",
+    "serve": "deno run --allow-net --allow-read=./ https://deno.land/std@0.201.0/http/file_server.ts dist/"
+  },
+  "compilerOptions": {
+    "lib": [
+      "deno.window",
+      "dom"
+    ]
+  }
+}
